@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Winder Delgado">
+    <meta name="description" content="Portafolio | Winder Delgado Desarrollador Web">
+    <meta name="robots" content="index,follow">
+
+    <title>Winder Delgado | Desarrollador Web Back-End</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon3.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/images/logo-wd.png" alt="Logo Portafolio" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="#home" class="active">Home</a>
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+            <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+            <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
+            <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+            <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+
+            <!-- Idiomas de la página -->
+            <!--<div id="flags" class="flags">
+                <div class="flags__item" data-language="es">
+                    <img src="./assets/images/icon-spain.png" alt="Español/Spain">
+                </div>
+                <div class="flags__item" data-language="en">
+                    <img src="./assets/images/icon-en.png" alt="Inglés/English">
+                </div>
+            </div>
+        </nav>-->
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="./assets/images/winderiano.png" alt="Ilustración hombre usando una laptop">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1" data-section="home" data-value="home_text-1">¡Hola! Soy</p>
+                    <p class="home_text-2">Winder Delgado</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador web <br>Front-End || Back-End</p>
+                </div>
+
+                <div class="container_parrafo-info">
+                    <p data-section="home" data-value="parrafo-info">Soy Técnico Superior en Informática y Desarrollador Web con un enfoque en programación tanto Front-End como Back-End utilizando el lenguaje de programacion Python<br><br>
+                        Estoy emocionado por aplicar mis conocimientos para desarrollar interfaces de usuario intuitivas y atractivas, así como soluciones robustas y eficientes.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="./assets/Documents/CV Winder Delgado.pdf" target="_blank">
+                        <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
+                    </a>
+                    <a href="#contacto">
+                        <button class="contact_button" data-section="home" data-value="contact_button">Contacto</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/winder-delgado-9a21b2304/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" class="icon-linkedin">
+                </a>
+                <a href="https://github.com/Winderiano" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub" class="icon-github">
+                </a>
+                <a href="https://codepen.io/winder-delgado" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon-CodePen">
+                </a>
+                <a href="https://www.instagram.com/devwinderpy/" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram" class="icon-instagram">
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section class="sobreMi" id="sobreMi">
+            <h1 data-section="sobre-mi" data-value="title" data-aos="fade-up">Sobre mí</h1>
+
+            <div class="container_content-sobreMi" data-aos="fade-right">
+                <div class="container_texto-sobreMi">
+                    <span class="title_sobreMi"><br>Winder Delgado</span>
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">¡Hola! Soy Winder Delgado, Técnico Superior en Informática, Programador y Desarrollador Web, actualmente me desenvuelvo como Desarrollador Web, con una pasión por crear soluciones backend robustas y eficientes. Aunque mi fortaleza principal reside en el desarrollo backend, también tengo conocimientos sólidos en HTML y CSS, y manejo básico de JavaScript para complementar mis habilidades frontend.
+
+                        Desde que comencé mi viaje en el mundo del desarrollo web, he estado inmerso en el aprendizaje y la exploración de las últimas tecnologías y prácticas en backend. Como Desarrollador Web también tengo experiencia en programación de escritorio utilizando Tkinter, además de conocimientos básicos en data science, machine learning y deep learning con Python.
+                        
+                        Tengo un sólido entendimiento de Python y he trabajado con frameworks como Django, Flask y FastAPI para la creación de APIs con Jinja2, y manejo de templates y API REST para proporcionar datos en formato JSON. También poseo conocimientos básicos de SQL y experiencia en el manejo de bases de datos relacionales como MySQL y PostgreSQL.
+                        
+                        En el ámbito de FrontEnd como desarrollo web, manejo HTML, CSS y JavaScript puro (Vanilla JavaScript), y utilizo GitHub para el control de versiones.
+                        
+                        Estoy emocionado por aplicar mis conocimientos para desarrollar interfaces de usuario intuitivas y atractivas, así como soluciones robustas y eficientes. Mi objetivo es crear experiencias de usuario que no solo sean visualmente impactantes, sino también altamente funcionales y accesibles. Me apasiona resolver problemas complejos con soluciones tecnológicas innovadoras, optimizar procesos y mejorar la eficiencia en el desarrollo de software. Estoy comprometido en mantenerme actualizado con las últimas tendencias y tecnologías del sector para ofrecer siempre lo mejor en cada proyecto.</span>
+                </div>
+    
+                <picture class="container_image-sobreMi">
+                    <img class="image_sobreMi" src="./assets/images/image_sobreMi3.png" alt="Ilustración hombre tomando café">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades" id="habilidades">
+            <h1 data-section="habilidades" data-value="title" data-aos="fade-up">Habilidades</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
+
+            <div class="cards_container--habilidades">
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./assets/images/icon-html.png" alt="HTML">
+                    <p>HTML 5</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-css.png" alt="CSS">
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./assets/images/icon-js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./assets/images/icon-python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./assets/images/icon-tailwind.png" alt="Tailwind">
+                    <p>Tailwind</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-django.jpg" alt="Django">
+                    <p>Django</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-flask.png" alt="Flask">
+                    <p>Flask</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-fastapi.png" alt="FastAPI">
+                    <p>FastAPI</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-mysql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-postgresql.png" alt="PostgreSQL">
+                    <p>PostgreSQL</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./assets/images/icon-github-hab.png" alt="GitHub">
+                    <p>Github</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="https://skillicons.dev/icons?i=bash" alt="Bash">
+                    <p>Bash</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section class="formacion" id="formacion">
+            <h1 data-section="formacion" data-value="title" data-aos="fade-up">Formación</h1>
+
+            <div class="cards_container--formacion">
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-iutirla" src="./assets/images/iutirla.png" alt="Logo - IUTIRLA">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion1">Tecnico Superior en Informatica</p>
+                        <p data-section="formacion" data-value="tiempo-formacion1">1997 - 2000</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://iutirlaoficial.com/informatica/" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">LINK
+                            </button>
+                        </a>
+
+                        <a href="./assets/Documents/pensum_informatica.pdf" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Pensum">PENSUM
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-udemy" src="./assets/images/udemy.png" alt="Logo - Udemy">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion3">Programación y Desarrollo Web con Python</p>
+                        <p>Mar/20201 - May/2022</p>
+                    </div>
+                    
+                    <div class="container_btn--proyectos">
+                        <a href="https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/?couponCode=24T7MT72224" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">LINK
+                            </button>
+                        </a>
+
+                        <a href="./assets/Documents/Pensum Python en todo Udemy.pdf" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Pensum">PENSUM
+                            </button>
+                        </a>
+                    </div>
+                                
+                </div>
+
+                <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
+                    <img class="logo-arg_programa" src="./assets/images/argentina_programa.png" alt="Logo - Argentina_programa">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion2">Ciencia de datos e Inteligencia Artifical Con Python(USAM)</p>
+                        <p data-section="formacion" data-value="tiempo-formacion2">Feb/2023 - Oct/2023</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa/programacion" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">LINK
+                            </button>
+                        </a>
+
+                        <a href="./assets/Documents/unsam_-_ciencia_de_datos_e_inteligencia_artificial.pdf" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Pensum">PENSUM
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <img class="logo-udemy" src="./assets/images/codoacodo.png" alt="Logo - Codo a codo">
+                    <div class="container_texto--formacion">
+                        <p data-section="formacion" data-value="formacion3">Programacion Full Stack con Python</p>
+                        <p>Feb/2024 - Jul/2024</p>
+                    </div>
+                    
+                    <div class="container_btn--proyectos">
+                        <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/courses" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">LINK
+                            </button>
+                        </a>
+
+                        <a href="./assets/Documents/Plan de estudios- estudiantes- Full Stack Python 2024.pdf" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Pensum">PENSUM
+                            </button>
+                        </a>
+                    </div>
+                                
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+            <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Proyectos</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+
+            <div class="cards_container--proyectos">
+                <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/cap-api_flask_jinja2.png" alt="Proyecto: Juego del ahorcado">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto1">API con Flask</h2>
+                        <p data-section="proyectos" data-value="info-proyecto1">En esta api puedes manejar contactos tipo agenda por medio de templates mediante el uso de Jinja2 y te permite realizar el famoso CRUD </p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://windercool.pythonanywhere.com/" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Winderiano/api-contacto" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/cap-demo_Ecommerce_front.png" alt="Proyecto: Ecommerce Demo">
+                    </div>
+
+                    <div class="container_textCard--proyectos text-portafolio">
+                        <h2 data-section="proyectos" data-value="title-proyecto2">Demo de Ecommerce</h2>
+                        <p data-section="proyectos" data-value="info-proyecto2">Este es un modelo de ecommerce con diseño basico mostrando solo parte de lo que podemos realizar en el Front-End utilizando solo HTML, CSS Y JAVASCRIPT.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://fluffy-crostata-65321a.netlify.app/" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Winderiano/TecnoComputer" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/images/cap-login.PNG" alt="Proyecto: Login">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto3">Login</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">Diseño de formulario de inicio de sesión futurista.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://firexfl.github.io/login/" target="_blank">
+                            <button class="btn_demo">
+                                <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Firexfl/login" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-githubProyecto.png" alt="Repositorio de github">REPO
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
+
+            <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    
+                <div class="container--contacto">
+                    <div class="container_text--contacto">
+                        <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    </div>
+    
+                    <form method="post" id="form" class="form-contact" name="contacto-portafolio" netlify>
+                        <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
+                        <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
+    
+                        <div class="btn_form--contacto">
+                            <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <a href="https://www.linkedin.com/in/winder-delgado-9a21b2304/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Winderiano" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="https://codepen.io/winder-delgado" target="_blank">
+                    <img src="./assets/images/icon-codepen.png" alt="CodePen" class="icon_codepen--footer">
+                </a>
+                <a href="https://www.instagram.com/devwinderpy/" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <img src="./assets/images/icon-corazon.png" alt="corazón">
+                <span>by</span>
+                <span>Winder delgado</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
