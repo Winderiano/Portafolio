@@ -554,6 +554,16 @@ img.logo-udemy {
     margin: 5rem 0;
 }
 
+img.logo-codo {
+    width: 24rem;
+    margin: 5rem 0;
+}
+
+img.logo-uroinnova {
+    width: 16rem;
+    margin: 5rem 0;
+}
+
 .cards--formacion p:nth-child(1) {
     color: var(--beaver);
     font-family: 'Cooper Hewitt';
