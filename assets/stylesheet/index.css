@@ -636,6 +636,7 @@ img.logo-uroinnova {
 
 .container_imgCard--proyectos img {
     width: 100%;
+    height: 20rem;
     border-radius: 20px 20px 0 0;
 }
 
@@ -719,7 +720,13 @@ img.logo-uroinnova {
     transition: all .4s ease;
 }
 
-/* Contacto */
+/*.cinema {
+    width: 14px;
+    margin-bottom: 10px;
+    content: ;
+}*/
+
+
 
 .contacto {
     background-color: var(--eerie-black);
