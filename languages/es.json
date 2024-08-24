@@ -9,15 +9,15 @@
 
     "home": {
         "home_text-1": "¡Hola! Soy",
-        "home_text-3": "Desarrollador web Front-End",
-        "parrafo-info": "Ingeniero de Sistemas enfocado en el Desarrollo Web Front-End. Con un sólido entendimiento de HTML, CSS y JavaScript, estoy emocionado de aplicar mis conocimientos para desarrollar interfaces de usuario intuitivas y atractivas.",
+        "home_text-3": "Desarrollador web Back-End <br> Data Science | Machine Learning",
+        "parrafo-info": "Soy un Informático y Desarrollador Web Back-End con Python y con conocimiento en HTML5, CSS3 y JavaScript. Mi experiencia abarca áreas como ciencia de datos, aprendizaje automático y profundo. <br><br>Estoy abierto a nuevo retos y a seguir aprendiendo a la par de los avances tecnologico que necesite en el ambito que me desenvuelva segun lo requerido. Estoy a disposicion y emocionado por aplicar mis conocimientos y experiencia para desarrollar programas robustos, eficientes y escalables con los mas altos estadares tecnologicos y siguiendo las mejores practicas de programacion, así como encontrar soluciones a los problemas que se presenten.",
         "cv_button": "Descargar CV",
         "contact_button": "Contacto"
     },
 
     "sobre-mi": {
         "title": "Sobre mí",
-        "texto_sobreMi": "¡Hola! Soy Winder Delgado, Ingeniero de Sistemas de profesión y actualmente me desenvuelvo como Desarrollador Web Front-End, con una pasión por crear experiencias web atractivas y funcionales.<br>Desde que comencé mi viaje en el mundo del desarrollo web, he estado inmerso en el aprendizaje y la exploración de las últimas tecnologías y prácticas en frontend. Mi enfoque principal es aprender y crecer constantemente, buscando oportunidades para mejorar mis habilidades y adquirir experiencia práctica en el campo."
+        "texto_sobreMi": "¡Hola! Soy Winder Delgado, Técnico Superior en Informática, Programador y Desarrollador Web, actualmente me desenvuelvo como Desarrollador Web, aunque mi fortaleza principal reside en el desarrollo Back-end, también tengo conocimientos sólidos en HTML y CSS, y manejo básico de JavaScript para complementar mis habilidades en el Front-end. <br><br>Desde que comencé mi viaje en el mundo del desarrollo web, he estado inmerso en el aprendizaje y la exploración de las últimas tecnologías y prácticas en backend. Como Desarrollador Web también tengo experiencia en programación de escritorio utilizando Tkinter y PyQt6, además de conocimientos básicos en data science, machine learning y deep learning con Python y sus librerias asociadas a este ambito. <br><br>Tengo un sólido entendimiento de Python y he trabajado con frameworks como Django, Flask y FastAPI para la creación de APIs con Jinja2, y manejo de templates y API REST para proporcionar datos en formato JSON. También poseo conocimientos básicos de SQL y experiencia en el manejo de bases de datos relacionales como MySQL y PostgreSQL. <br><br>En el ámbito de FrontEnd como desarrollo web, manejo HTML, CSS y JavaScript, Bootstrap 5 y Tailwind CSS, y utilizo GitHub para el control de versiones. <br><br>Estoy emocionado por aplicar mis conocimientos para desarrollar interfaces de usuario intuitivas y atractivas, así como soluciones robustas y eficientes con los mas altos estadares tecnologicos y siguiendo las mejores practicas de programacion, así como encontrar soluciones a los problemas que se presenten. Mi objetivo es crear experiencias de usuario que no solo sean visualmente impactantes, sino también altamente funcionales y accesibles. Me apasiona resolver problemas complejos con soluciones tecnológicas innovadoras, optimizar procesos y mejorar la eficiencia en el desarrollo de software. Estoy comprometido en mantenerme actualizado con las últimas tendencias y tecnologías del sector para ofrecer siempre lo mejor en cada proyecto."
     },
 
     "habilidades": {
@@ -26,21 +26,26 @@
 
     "formacion": {
         "title": "Formación",
-        "formacion1": "Ingeniería de Sistemas y Tecnologías",
-        "tiempo-formacion1": "2014 - 2021",
-        "formacion2": "Escuela de Desarrollo Web",
-        "tiempo-formacion2": "2023 - En Curso",
-        "formacion3": "Escuela de Programación y Desarrollo Web"
+        "formacion1": "Tecnico Superior en Informatica",
+        "tiempo-formacion1": "1997 - 2000",
+        "formacion2": "Programación y Desarrollo Web con Python",
+        "tiempo-formacion2": "2021 - 2022",
+        "formacion3": "Ciencia de datos e Inteligencia Artifical Con Python(USAM)",
+        "tiempo-formacion3": "Feb/2023 - Oct/2023",
+        "formacion4": "Programacion Full Stack con Python",
+        "tiempo-formacion4": "Feb/2024 - Jul/2024",
+        "formacion5": "Master En Bioinformatica",
+        "tiempo-formacion5": "Nov/2023 - En Curso"
     },
 
     "proyectos": {
         "title": "Proyectos",
-        "title-proyecto1": "Juego del Ahorcado",
-        "info-proyecto1": "Un juego donde el usuario debe adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se complete.",
-        "title-proyecto2": "Portafolio",
-        "info-proyecto2": "Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.",
-        "title-proyecto3": "Login",
-        "info-proyecto3": "Diseño de formulario de inicio de sesión futurista."
+        "title-proyecto1": "API con Flask",
+        "info-proyecto1": "En esta api puedes manejar contactos tipo agenda por medio de templates mediante el uso de Jinja2 y te permite realizar el famoso CRUD.",
+        "title-proyecto2": "Demo de Ecommerce",
+        "info-proyecto2": "Este es un modelo de ecommerce con diseño basico mostrando solo parte de lo que podemos realizar en el Front-End utilizando solo HTML, CSS Y JAVASCRIPT.",
+        "title-proyecto3": "Programa de peliculas de cine",
+        "info-proyecto3": "Proyecto peliculas de cine realizado utilizando Html, Css Y Js como Front-end y en Back-end utilizando Python y Framework Api Rest Flask."
     },
 
     "contacto": {

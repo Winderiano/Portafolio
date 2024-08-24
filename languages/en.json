@@ -9,15 +9,15 @@
 
     "home": {
         "home_text-1": "¡Hi! I'm",
-        "home_text-3": "Front-End Web Developer",
-        "parrafo-info": "Systems Engineer focused on Front-End Web Development. With a solid understanding of HTML, CSS and JavaScript, I am excited to apply my knowledge to develop intuitive and engaging user interfaces.",
+        "home_text-3": "Back-End Web Developer <br> Data Science | Machine Learning",
+        "parrafo-info": "I am a Computer Scientist and Back-End Web Developer with Python and knowledge in HTML5, CSS3 and JavaScript. My experience covers areas such as data science, machine learning and deep learning. <br><br>I am open to new challenges and to continue learning along with the technological advances that I need in the field that I develop as required. I am available and excited to apply my knowledge and experience to develop robust, efficient and scalable programs with the highest technological standards and following the best programming practices, as well as finding solutions to the problems that arise.",
         "cv_button": "Download CV",
         "contact_button": "Contact"
     },
 
     "sobre-mi": {
         "title": "About me",
-        "texto_sobreMi": "Hi! I'm Winder Delgado, a Systems Engineer by profession and I currently work as a Front-End Web Developer, with a passion for creating engaging and functional web experiences.<br>Since I started my journey in the web development world, I have been immersed in learning and exploring the latest frontend technologies and practices. My main focus is to constantly learn and grow, looking for opportunities to improve my skills and gain hands-on experience in the field."
+        "texto_sobreMi": "Hello! I am Winder Delgado, a Senior IT Technician, Programmer and Web Developer. I currently work as a Web Developer, although my main strength lies in Back-end development, I also have solid knowledge of HTML and CSS, and basic JavaScript skills to complement my Front-end skills. <br><br>Since I began my journey in the world of web development, I have been immersed in learning and exploring the latest technologies and practices in backend. As a Web Developer I also have experience in desktop programming using Tkinter and PyQt6, as well as basic knowledge in data science, machine learning and deep learning with Python and its associated libraries. <br><br>I have a solid understanding of Python and have worked with frameworks such as Django, Flask and FastAPI for the creation of APIs with Jinja2, and management of templates and REST APIs to provide data in JSON format. I also have basic knowledge of SQL and experience in the management of relational databases such as MySQL and PostgreSQL. <br><br>In the FrontEnd field of web development, I handle HTML, CSS and JavaScript, Bootstrap 5 and Tailwind CSS, and I use GitHub for version control. <br><br>I am excited to apply my knowledge to develop intuitive and attractive user interfaces, as well as robust and efficient solutions with the highest technological standards and following the best programming practices, as well as finding solutions to the problems that arise. My goal is to create user experiences that are not only visually striking, but also highly functional and accessible. I am passionate about solving complex problems with innovative technological solutions, optimizing processes and improving efficiency in software development. I am committed to staying up to date with the latest trends and technologies in the sector to always offer the best in each project."
     },
 
     "habilidades": {
@@ -26,21 +26,26 @@
 
     "formacion": {
         "title": "Training",
-        "formacion1": "Systems Engineering and Technologies",
-        "tiempo-formacion1": "2014 - 2021",
-        "formacion2": "Web Development School",
-        "tiempo-formacion2": "2023 - In progress",
-        "formacion3": "School of Programming and Web Development"
+        "formacion1": "Senior Computer Technician",
+        "tiempo-formacion1": "1997 - 2000",
+        "formacion2": "Programming and Web Development with Python",
+        "tiempo-formacion2": "2021 - 2022",
+        "formacion3": "Data Science and Artificial Intelligence with Python (UNSAM)",
+        "tiempo-formacion3": "Feb/2023 - Oct/2023",
+        "formacion4": "Full Stack Programming with Python",
+        "tiempo-formacion4": "Feb/2024 - Jul/2024",
+        "formacion5": "Master in Bioinformatics",
+        "tiempo-formacion5": "Nov/2023 - En Curso"
     },
 
     "proyectos": {
         "title": "Projects",
-        "title-proyecto1": "Hangman Game",
-        "info-proyecto1": "A game where the user must guess the secret word with a certain number of chances. The word is chosen randomly by the program and the user will lose the moment the gallows is completed.",
-        "title-proyecto2": "Portfolio",
-        "info-proyecto2": "My personal web portfolio, where you can find some of my most outstanding projects, my technical skills and a bit about my background.",
-        "title-proyecto3": "Login",
-        "info-proyecto3": "Futuristic login form design"
+        "title-proyecto1": "API with Flask",
+        "info-proyecto1": "In this API you can manage agenda type contacts through templates using Jinja2 and it allows you to perform the famous CRUD.",
+        "title-proyecto2": "Ecommerce Demo",
+        "info-proyecto2": "This is an ecommerce template with a basic design showing only part of what we can do in the Front-End using only HTML, CSS AND JAVASCRIPT.",
+        "title-proyecto3": "Cinema film program",
+        "info-proyecto3": "Film project made using HTML, CSS and JS as Front-end and in Back-end using Python and Framework Api Rest Flask."
     },
 
     "contacto": {
