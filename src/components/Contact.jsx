@@ -87,7 +87,7 @@ export default function Contact() {
                       <FaEnvelope className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Email</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">{t('contact.direct.emailLabel')}</p>
                       <p className="font-medium text-slate-800 dark:text-white">
                         winderdelgadoarg19@gmail.com
                       </p>
@@ -103,7 +103,7 @@ export default function Contact() {
                       <FaPhone className="w-5 h-5 text-green-500" />
                     </div>
                     <div>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">WhatsApp</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">{t('contact.direct.whatsappLabel')}</p>
                       <p className="font-medium text-slate-800 dark:text-white">
                         +54 9 11 3770 2483
                       </p>

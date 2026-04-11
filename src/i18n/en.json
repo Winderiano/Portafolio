@@ -39,6 +39,7 @@
   },
   "skills": {
     "title": "Skills",
+    "subtitle": "A unique combination of medical experience and technical skills",
     "levels": {
       "beginner": "Beginner",
       "intermediate": "Intermediate",
@@ -375,9 +376,11 @@
     },
     "direct": {
       "title": "Direct Contact",
+      "emailLabel": "Email",
       "email": "winderdelgadoarg19@gmail.com",
       "phone": "+54 9 11 3770 2483",
-      "whatsapp": "Send WhatsApp"
+      "whatsapp": "Send WhatsApp",
+      "whatsappLabel": "WhatsApp"
     },
     "social": {
       "title": "Social Networks",

@@ -103,7 +103,7 @@ export default function Skills() {
               {t('skills.title')}
             </h2>
             <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Una combinación única de experiencia médica y habilidades técnicas
+              {t('skills.subtitle')}
             </p>
           </motion.div>
 
