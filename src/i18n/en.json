@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello! I'm",
+    "name": "Winder Delgado",
+    "title": "Doctor & Developer",
+    "subtitle": "Where medicine meets technology",
+    "description": "Physician with over 10 years of clinical experience, specialized in orthopedics and traumatology, with a passion for programming and technological innovation. I combine medical knowledge with backend development skills, AI automation and SaaS solutions to transform healthcare.",
+    "cta": "View Portfolio",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My passion: integrating medicine and technology to improve health",
+    "description": "I am a healthcare professional with a unique vision: using technology to optimize medical processes and improve patient care. My career combines over a decade of clinical experience with advanced knowledge in Python programming, backend development and artificial intelligence.",
+    "highlight1": {
+      "title": "Emergency & Guard Physician",
+      "description": "Over 10 years of experience in hospital emergency care, inpatient ward and multiple branches of medicine."
+    },
+    "highlight2": {
+      "title": "Developer & Tech Innovator",
+      "description": "Freelance implementing SaaS systems, AI automation and digital process integration in the healthcare sector."
+    },
+    "highlight3": {
+      "title": "Continuing Education",
+      "description": "Specialization in orthopedics, bioinformatics, occupational health, currently pursuing occupational medicine."
+    },
+    "philosophy": "I firmly believe that the future of medicine lies in the fusion of clinical experience with technology. My goal is to contribute from both worlds to create solutions that benefit healthcare professionals and patients alike."
+  },
+  "skills": {
+    "title": "Skills",
+    "medical": {
+      "title": "Medicine",
+      "items": ["Emergency Medicine", "Orthopedics & Traumatology", "Occupational Health", "Clinical Research", "Clinical Trials", "Occupational Medicine"]
+    },
+    "tech": {
+      "title": "Development & Tech",
+      "items": ["Python", "Django", "Flask", "FastAPI", "SQL", "MySQL", "PostgreSQL", "HTML/CSS/JS", "Git/GitHub"]
+    },
+    "ai": {
+      "title": "AI & Data",
+      "items": ["Machine Learning", "Deep Learning", "Bioinformatics", "AI Automation", "Data Science"]
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": ["Teamwork", "Communication", "Adaptability", "Problem Solving", "Leadership"]
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": [
+      {
+        "role": "Emergency Physician",
+        "company": "Ministry of Health - GCBA",
+        "period": "2023 - Present",
+        "description": "Emergency medical care and inpatient ward at a public hospital in Buenos Aires."
+      },
+      {
+        "role": "Occupational Physician",
+        "company": "Cemla - Medical Center",
+        "period": "2022 - Present",
+        "description": "Occupational evaluations, health monitoring and prevention policies."
+      },
+      {
+        "role": "Freelance Developer",
+        "company": "Health Tech Projects",
+        "period": "2021 - Present",
+        "description": "Implementing SaaS systems, AI automation and process integration for medical institutions."
+      },
+      {
+        "role": "Orthopedics Resident",
+        "company": "Hospital José María Vargas - Caracas",
+        "period": "2015 - 2018",
+        "description": "Residency in orthopedics and traumatology. Orthopedic surgery, traumatology and rehabilitation."
+      },
+      {
+        "role": "Rural Physician",
+        "company": "Venezuela",
+        "period": "2013 - 2015",
+        "description": "Health situation analysis, comprehensive care for communities, rotation through multiple hospital specialties."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Tech projects that combine health and innovation",
+    "viewDemo": "View Demo",
+    "viewRepo": "View Code",
+    "items": [
+      {
+        "title": "Contacts API - Flask",
+        "description": "REST API with Flask and Jinja2 for contact management like an agenda. Full CRUD with dynamic templates.",
+        "tech": ["Python", "Flask", "SQLAlchemy", "Jinja2"],
+        "demo": "https://windercool.pythonanywhere.com/",
+        "repo": "https://github.com/Winderiano/api-contacto",
+        "image": "cap-api_flask_jinja2.png"
+      },
+      {
+        "title": "Ecommerce Demo",
+        "description": "Modern online store demo. Complete frontend with HTML, CSS and JavaScript.",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "demo": "https://fluffy-crostata-65321a.netlify.app/",
+        "repo": "https://github.com/Winderiano/TecnoComputer",
+        "image": "cap-demo_Ecommerce_front.png"
+      },
+      {
+        "title": "Cine App",
+        "description": "Movies web platform with Flask API REST backend and modern frontend. Cinema data integration.",
+        "tech": ["Python", "Flask", "REST API", "HTML", "CSS", "JS"],
+        "demo": "https://windercineweb.netlify.app/",
+        "repo": "https://github.com/Winderiano",
+        "image": "cap-cinema.png"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "degree": "Postgraduate Occupational Medicine",
+        "institution": "Universidad Favaloro",
+        "period": "2024 - In Progress",
+        "description": "Specialization in occupational health and occupational medicine."
+      },
+      {
+        "degree": "Master in Bioinformatics",
+        "institution": "Universidad Nebrija - Spain",
+        "period": "2023 - In Progress",
+        "description": "Online bioinformatics program and computational applications in medicine."
+      },
+      {
+        "degree": "Full Stack Python",
+        "institution": "Codo a Codo - Buenos Aires",
+        "period": "Feb 2024 - Jul 2024",
+        "description": "Full stack programming with Python, Django, Flask and web technologies."
+      },
+      {
+        "degree": "Data Science & AI",
+        "institution": "Argentina Programa - USAM",
+        "period": "Feb 2023 - Oct 2023",
+        "description": "Data science, machine learning and deep learning with Python."
+      },
+      {
+        "degree": "Occupational Health Diploma",
+        "institution": "CEUJA - Venezuela",
+        "period": "2018 - 2019",
+        "description": "Specialization in occupational medicine and workplace safety."
+      },
+      {
+        "degree": "Computer Technician",
+        "institution": "IUTIRLA - Venezuela",
+        "period": "1997 - 2000",
+        "description": "Technical training in computer systems and programming."
+      },
+      {
+        "degree": "Physician & Surgeon",
+        "institution": "University of Venezuela",
+        "period": "2005 - 2013",
+        "description": "Medical degree with specialization in rural medicine."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certifications",
+    "view": "View Certificate",
+    "items": [
+      "Full Stack Python Certification - Codo a Codo",
+      "Data Science Certification - Talento Tech",
+      "Python Initial Certification - Argentina Programa",
+      "Bioinformatics Certification - Euroinnova",
+      "BI & Analytics Certification - Talento Tech",
+      "Automation Certification - Talento Tech"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's connect? I'm open to new opportunities",
+    "description": "Whether you're a medical institution looking to digitize processes, a HealthTech startup seeking technical talent with clinical knowledge, or a tech company needing a profile that understands the healthcare sector, I'd love to talk.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending. Try again."
+    },
+    "direct": {
+      "title": "Direct Contact",
+      "email": "winderdelgadoarg19@gmail.com",
+      "phone": "+54 9 11 3770 2483",
+      "whatsapp": "Send WhatsApp"
+    },
+    "social": {
+      "title": "Social Networks",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "instagram": "Instagram"
+    }
+  },
+  "footer": {
+    "text": "Built with",
+    "heart": "passion",
+    "by": "by",
+    "copyright": "© 2024 Winder Delgado. All rights reserved."
+  }
+}

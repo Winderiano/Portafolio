@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy",
+    "name": "Winder Delgado",
+    "title": "Médico & Desarrollador",
+    "subtitle": "Donde la medicina encontra la tecnología",
+    "description": "Médico con más de 10 años de experiencia clínica, especializado en ortopedia y traumatología, con pasión por la programación y la innovación tecnológica. Combino mi conocimiento médico con habilidades en desarrollo backend, automatización con IA y soluciones SaaS para transformar la atención médica.",
+    "cta": "Ver Portafolio",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Mi pasión: integrar medicina y tecnología para mejorar la salud",
+    "description": "Soy un profesional de la salud con una visión única: utilizar la tecnología para optimizar procesos médicos y mejorar la atención al paciente. Mi trayectoria combina más de una década de experiencia clínica con conocimientos avanzados en programación Python, desarrollo backend e inteligencia artificial.",
+    "highlight1": {
+      "title": "Médico de Guardia & Emergencias",
+      "description": "Más de 10 años de experiencia en atención hospitalaria de urgencias, sala de internación y múltiples ramas de la medicina."
+    },
+    "highlight2": {
+      "title": "Desarrollador & Innovador Tech",
+      "description": " Freelance implementando sistemas SaaS, automatizaciones con IA e integración de procesos digitales en el sector salud."
+    },
+    "highlight3": {
+      "title": "Formación Continua",
+      "description": "Especialización en ortopedia, bioinformática, salud ocupacional y actualmente cursando medicina del trabajo."
+    },
+    "philosophy": "Creo firmemente que el futuro de la medicina está en la fusión de la experiencia clínica con la tecnología. Mi objetivo es aportar desde ambos mundos para crear soluciones que beneficien tanto a profesionales de la salud como a pacientes."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "medical": {
+      "title": "Medicina",
+      "items": ["Medicina de Guardia", "Ortopedia y Traumatología", "Salud Ocupacional", "Investigación Clínica", "Ensayos Clínicos", "Medicina Laboral"]
+    },
+    "tech": {
+      "title": "Desarrollo & Tech",
+      "items": ["Python", "Django", "Flask", "FastAPI", "SQL", "MySQL", "PostgreSQL", "HTML/CSS/JS", "Git/GitHub"]
+    },
+    "ai": {
+      "title": "IA & Datos",
+      "items": ["Machine Learning", "Deep Learning", "Bioinformática", "Automatización IA", "Data Science"]
+    },
+    "soft": {
+      "title": "Habilidades Blandas",
+      "items": ["Trabajo en Equipo", "Comunicación", "Adaptabilidad", "Resolución de Problemas", "Liderazgo"]
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "items": [
+      {
+        "role": "Médico de Guardia",
+        "company": "Ministerio de Salud - GCBA",
+        "period": "2023 - Actual",
+        "description": "Atención médica de urgencias y sala de internación en hospital público de Buenos Aires."
+      },
+      {
+        "role": "Médico Laboral",
+        "company": "Cemla - Centro Médico",
+        "period": "2022 - Actual",
+        "description": "Evaluaciones ocupacionales, control de salud laboral y políticas de prevención."
+      },
+      {
+        "role": "Desarrollador Freelance",
+        "company": "Proyectos Tech Salud",
+        "period": "2021 - Actual",
+        "description": "Implementación de sistemas SaaS, automatizaciones con IA e integración de procesos para instituciones médicas."
+      },
+      {
+        "role": "Residente Ortopedia",
+        "company": "Hospital José María Vargas - Caracas",
+        "period": "2015 - 2018",
+        "description": "Residencia de especialización en ortopedia y traumatología. Cirugía ortopédica, травматология y rehabilitación."
+      },
+      {
+        "role": "Médico Rural",
+        "company": "Venezuela",
+        "period": "2013 - 2015",
+        "description": "Análisis de situación de salud, atención integral de comunidades, rotación por múltiples especialidades hospitalarias."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Proyectos tech que combinan salud e innovación",
+    "viewDemo": "Ver Demo",
+    "viewRepo": "Ver Código",
+    "items": [
+      {
+        "title": "API Contactos - Flask",
+        "description": "API REST con Flask y Jinja2 para gestión de contactos tipo agenda. CRUD completo con templates dinámicos.",
+        "tech": ["Python", "Flask", "SQLAlchemy", "Jinja2"],
+        "demo": "https://windercool.pythonanywhere.com/",
+        "repo": "https://github.com/Winderiano/api-contacto",
+        "image": "cap-api_flask_jinja2.png"
+      },
+      {
+        "title": "Ecommerce Demo",
+        "description": "Demo de tienda online con diseño moderno. Frontend completo con HTML, CSS y JavaScript.",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "demo": "https://fluffy-crostata-65321a.netlify.app/",
+        "repo": "https://github.com/Winderiano/TecnoComputer",
+        "image": "cap-demo_Ecommerce_front.png"
+      },
+      {
+        "title": "Cine App",
+        "description": "Plataforma web de películas con backend Flask API REST y frontend moderno. Integración de datos de cine.",
+        "tech": ["Python", "Flask", "REST API", "HTML", "CSS", "JS"],
+        "demo": "https://windercineweb.netlify.app/",
+        "repo": "https://github.com/Winderiano",
+        "image": "cap-cinema.png"
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación Académica",
+    "items": [
+      {
+        "degree": "Postgrado Medicina del Trabajo",
+        "institution": "Universidad Favaloro",
+        "period": "2024 - En curso",
+        "description": "Especialización en salud ocupacional y medicina laboral."
+      },
+      {
+        "degree": "Master en Bioinformática",
+        "institution": "Universidad Nebrija - España",
+        "period": "2023 - En curso",
+        "description": "Programa online de bioinformática y aplicaciones computationales en medicina."
+      },
+      {
+        "degree": "Full Stack Python",
+        "institution": "Codo a Codo - Buenos Aires",
+        "period": "Feb 2024 - Jul 2024",
+        "description": "Programación full stack con Python, Django, Flask y tecnologías web."
+      },
+      {
+        "degree": "Ciencia de Datos e IA",
+        "institution": "Argentina Programa - USAM",
+        "period": "Feb 2023 - Oct 2023",
+        "description": "Data science, machine learning y deep learning con Python."
+      },
+      {
+        "degree": "Diplomatura Salud Ocupacional",
+        "institution": "CEUJA - Venezuela",
+        "period": "2018 - 2019",
+        "description": "Especialización en medicina ocupacional y seguridad laboral."
+      },
+      {
+        "degree": "Técnico Superior en Informática",
+        "institution": "IUTIRLA - Venezuela",
+        "period": "1997 - 2000",
+        "description": "Formación técnica en sistemas informáticos y programación."
+      },
+      {
+        "degree": "Médico Cirujano",
+        "institution": "Universidad de Venezuela",
+        "period": "2005 - 2013",
+        "description": "Carrera de medicina con especialización en medicina rural."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certificaciones",
+    "view": "Ver Certificado",
+    "items": [
+      "Certificación Full Stack Python - Codo a Codo",
+      "Certificación Data Science - Talento Tech",
+      "Certificación Python Inicial - Argentina Programa",
+      "Certificación Bioinformática - Euroinnova",
+      "Certificación BI & Analytics - Talento Tech",
+      "Certificación Automatización - Talento Tech"
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Conectamos? Estoy abierto a nuevas oportunidades",
+    "description": "Ya seas una institución médica buscando digitalizar procesos, una startup de HealthTech buscando talento técnico con conocimiento clínico, o una empresa de tecnología necesito un perfil que entienda el sector salud, estaré encantado de conversar.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar. Intenta de nuevo."
+    },
+    "direct": {
+      "title": "Contacto Directo",
+      "email": "winderdelgadoarg19@gmail.com",
+      "phone": "+54 9 11 3770 2483",
+      "whatsapp": "Enviar WhatsApp"
+    },
+    "social": {
+      "title": "Redes Sociales",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "instagram": "Instagram"
+    }
+  },
+  "footer": {
+    "text": "Construido con",
+    "heart": "pasión",
+    "by": "por",
+    "copyright": "© 2024 Winder Delgado. Todos los derechos reservados."
+  }
+}
