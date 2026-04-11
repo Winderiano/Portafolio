@@ -1,16 +1,53 @@
-# React + Vite
+# Portafolio - Winder Delgado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Médico & Desarrollador** - Portafolio profesional híbrido
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-5-purple)
+![Tailwind](https://img.shields.io/badge/Tailwind-3-teal)
+![Framer Motion](https://img.shields.io/badge/Framer-Motion-black)
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌙 Dark/Light mode con persistencia
+- 🌐 Sistema de idiomas ES/EN
+- ✨ Animaciones suaves con Framer Motion
+- 📱 Diseño responsivo
+- 💼 Perfil híbrido: Medicina + Programación
 
-## Expanding the ESLint configuration
+## Ver online
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[**Portafolio Online**](https://portafoliowinder.netlify.app)
+
+---
+
+## 🚀 Instalación local
+
+```bash
+# Clonar repositorio
+git clone https://github.com/Winderiano/Portafolio.git
+
+# Entrar al directorio
+cd portafolio-react
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+```
+
+## 🛠️ Build para producción
+
+```bash
+npm run build
+```
+
+## Contacto
+
+- 📧 winderdelgadoarg19@gmail.com
+- 📱 +54 9 11 3770 2483
+- 🔗 [LinkedIn](https://www.linkedin.com/in/winder-ricardo-delgado-pereira-38b3b0236)
+- 💻 [GitHub](https://github.com/Winderiano)
