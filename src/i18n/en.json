@@ -192,13 +192,13 @@
         "degree": "Postgraduate Occupational Medicine",
         "institution": "Universidad Favaloro",
         "period": "2026 - In Progress",
-        "description": "Specialization in occupational health and occupational medicine."
+        "description": "Specialization in Occupational Medicine."
       },
       {
         "degree": "Master in Bioinformatics",
         "institution": "Universidad Nebrija - Spain",
         "period": "2023 - 2024",
-        "description": "Online bioinformatics program and computational applications in medicine. COMPLETED"
+        "description": "Online bioinformatics program and computational applications in medicine."
       },
       {
         "degree": "Upper Course Orthopedics & Traumatology",
@@ -258,47 +258,56 @@
   },
   "certificates": {
     "title": "Certifications",
-    "view": "View Certificate",
+    "certificate": "Certificate",
+    "studyPlan": "Study Plan",
     "items": [
       {
         "name": "Full Stack Python",
         "institution": "Codo a Codo",
-        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/CV%20Winder%20Delgado.pdf"
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Diploma_CAC.pdf",
+        "studyPlan": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Plan%20de%20estudios-%20estudiantes-%20Full%20Stack%20Python%202024.pdf"
       },
       {
-        "name": "Data Science & AI",
-        "institution": "Argentina Programa - USAM",
-        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/unsam_-_ciencia_de_datos_e_inteligencia_artificial.pdf"
-      },
-      {
-        "name": "Master Bioinformatics",
-        "institution": "Universidad Nebrija / Euroinnova",
-        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/Master-Bioinformatica.pdf"
+        "name": "Master in Bioinformatics",
+        "institution": "Universidad Nebrija",
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/master-biomedicina.pdf",
+        "studyPlan": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Master-Bioinformatica.pdf"
       },
       {
         "name": "Python Initial",
         "institution": "Argentina Programa",
-        "link": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
-      },
-      {
-        "name": "Backend Python",
-        "institution": "Talento Tech",
-        "link": "https://talentotech.gob.ar/"
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Inicial_%20_%20Certificacin%20%28python%20inicial%29.pdf",
+        "studyPlan": null
       },
       {
         "name": "BI & Analytics",
         "institution": "Talento Tech",
-        "link": "https://talentotech.gob.ar/"
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/BI_-_Certificacin.pdf",
+        "studyPlan": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Plan-BI_compressed.pdf"
       },
       {
-        "name": "Data Science",
+        "name": "Backend Python",
         "institution": "Talento Tech",
-        "link": "https://talentotech.gob.ar/"
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/IIA-_Certificacin%20talento%20tech.pdf",
+        "studyPlan": null
       },
       {
-        "name": "Data Analysis",
-        "institution": "Talento Tech",
-        "link": "https://talentotech.gob.ar/"
+        "name": "Data Science & AI",
+        "institution": "Argentina Programa - USAM",
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Diploma_CAC%20Full%20stack%20python.pdf",
+        "studyPlan": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/unsam_-_ciencia_de_datos_e_inteligencia_artificial.pdf"
+      },
+      {
+        "name": "Medical Ethics",
+        "institution": "USAM",
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/certificado%20de%20etica%20medica-%20winder%20delgado.pdf",
+        "studyPlan": null
+      },
+      {
+        "name": "Module 2 - USAM",
+        "institution": "USAM",
+        "certificate": "https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/Certificado%20de%202do%20modulo%20USAM.pdf",
+        "studyPlan": null
       }
     ]
   },

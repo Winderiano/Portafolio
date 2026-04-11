@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaGraduationCap, FaAward, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaExternalLinkAlt, FaFileAlt, FaBook } from 'react-icons/fa';
 
 export default function Education() {
   const { t } = useLanguage();
@@ -80,17 +80,13 @@ export default function Education() {
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {certificates.map((cert, index) => (
-                <a
+                <motion.div
                   key={index}
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02 }}
+                  className="p-4 rounded-xl bg-gradient-to-r from-slate-50 to-slate-100 dark:from-dark-light dark:to-dark border border-slate-200 dark:border-slate-700"
                 >
-                  <motion.div
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.02 }}
-                    className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-slate-50 to-slate-100 dark:from-dark-light dark:to-dark border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer"
-                  >
+                  <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <FaAward className="w-5 h-5 text-primary" />
                     </div>
@@ -102,9 +98,32 @@ export default function Education() {
                         {cert.institution}
                       </span>
                     </div>
-                    <FaExternalLinkAlt className="w-4 h-4 text-slate-400" />
-                  </motion.div>
-                </a>
+                  </div>
+                  <div className="flex gap-2 flex-wrap">
+                    {cert.certificate && (
+                      <a
+                        href={cert.certificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors flex items-center gap-1"
+                      >
+                        <FaFileAlt className="w-3 h-3" />
+                        {t('certificates.certificate')}
+                      </a>
+                    )}
+                    {cert.studyPlan && (
+                      <a
+                        href={cert.studyPlan}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs px-2 py-1 rounded-full bg-accent/10 text-accent hover:bg-accent/20 transition-colors flex items-center gap-1"
+                      >
+                        <FaBook className="w-3 h-3" />
+                        {t('certificates.studyPlan')}
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
