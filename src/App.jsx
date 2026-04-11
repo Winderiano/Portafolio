@@ -9,6 +9,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { useTheme } from './hooks/useTheme';
+import { LanguageProvider } from './hooks/useLanguage';
 
 function App() {
   const { isDark } = useTheme();
@@ -20,19 +21,21 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="min-h-screen bg-light dark:bg-dark transition-colors">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-light dark:bg-dark transition-colors">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

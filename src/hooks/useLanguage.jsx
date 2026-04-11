@@ -1,10 +1,20 @@
-import { useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import es from '../i18n/es.json';
 import en from '../i18n/en.json';
 
 const translations = { es, en };
 
-export function useLanguage() {
+// Default values para cuando NO hay Provider
+const defaultContext = {
+  language: 'es',
+  changeLanguage: () => {},
+  t: (key) => key,
+  isSpanish: true
+};
+
+const LanguageContext = createContext(defaultContext);
+
+export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('language');
@@ -33,5 +43,13 @@ export function useLanguage() {
     }
   };
 
-  return { language, changeLanguage, t, isSpanish: language === 'es' };
+  return (
+    <LanguageContext.Provider value={{ language, changeLanguage, t, isSpanish: language === 'es' }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+}
+
+export function useLanguage() {
+  return useContext(LanguageContext);
 }
