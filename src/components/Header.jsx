@@ -33,7 +33,15 @@ export default function Header() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Offset for fixed header (80px height)
+      const headerOffset = 80;
+      const bodyRect = element.getBoundingClientRect().top;
+      const offsetPosition = bodyRect + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
