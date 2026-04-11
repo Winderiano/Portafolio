@@ -36,21 +36,72 @@
   },
   "skills": {
     "title": "Skills",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
     "medical": {
       "title": "Medicine",
-      "items": ["Emergency Medicine", "Primary Care", "Occupational Health", "Clinical Research", "Clinical Trials", "Occupational Medicine"]
+      "items": [
+        { "name": "Emergency Medicine", "level": "expert" },
+        { "name": "Primary Care", "level": "expert" },
+        { "name": "Occupational Health", "level": "advanced" },
+        { "name": "Clinical Research", "level": "intermediate" },
+        { "name": "Clinical Trials", "level": "intermediate" },
+        { "name": "Occupational Medicine", "level": "advanced" }
+      ]
     },
-    "tech": {
-      "title": "Development & Tech",
-      "items": ["Python", "Django", "Flask", "FastAPI", "SQL", "MySQL", "PostgreSQL", "HTML/CSS/JS", "Git/GitHub"]
+    "backend": {
+      "title": "Backend",
+      "items": [
+        { "name": "Python", "level": "advanced", "logo": "python" },
+        { "name": "Django", "level": "advanced", "logo": "django" },
+        { "name": "Flask", "level": "advanced", "logo": "flask" },
+        { "name": "FastAPI", "level": "intermediate", "logo": "fastapi" },
+        { "name": "SQL", "level": "advanced" },
+        { "name": "MySQL", "level": "advanced", "logo": "mysql" },
+        { "name": "PostgreSQL", "level": "advanced", "logo": "postgresql" }
+      ]
+    },
+    "frontend": {
+      "title": "Frontend",
+      "items": [
+        { "name": "HTML/CSS", "level": "advanced", "logo": "html" },
+        { "name": "JavaScript", "level": "intermediate", "logo": "javascript" },
+        { "name": "React", "level": "intermediate", "logo": "react" },
+        { "name": "Tailwind", "level": "intermediate", "logo": "tailwind" }
+      ]
     },
     "ai": {
       "title": "AI & Data",
-      "items": ["Machine Learning", "Deep Learning", "Bioinformatics", "AI Automation", "Data Science"]
+      "items": [
+        { "name": "Machine Learning", "level": "intermediate" },
+        { "name": "Deep Learning", "level": "beginner" },
+        { "name": "Bioinformatics", "level": "intermediate" },
+        { "name": "Data Science", "level": "intermediate" }
+      ]
+    },
+    "tools": {
+      "title": "Tools & Automation",
+      "items": [
+        { "name": "Git/GitHub", "level": "advanced", "logo": "github" },
+        { "name": "Docker", "level": "intermediate", "logo": "docker" },
+        { "name": "n8n", "level": "intermediate", "logo": "n8n" },
+        { "name": "Web Scraping", "level": "intermediate" },
+        { "name": "Unit Testing", "level": "beginner" }
+      ]
     },
     "soft": {
       "title": "Soft Skills",
-      "items": ["Teamwork", "Communication", "Adaptability", "Problem Solving", "Leadership"]
+      "items": [
+        { "name": "Teamwork", "level": "expert" },
+        { "name": "Communication", "level": "expert" },
+        { "name": "Adaptability", "level": "expert" },
+        { "name": "Problem Solving", "level": "advanced" },
+        { "name": "Leadership", "level": "advanced" }
+      ]
     }
   },
   "experience": {
@@ -59,19 +110,25 @@
       {
         "role": "Emergency Physician",
         "company": "Ministry of Sports - GCBA",
-        "period": "2023 - Present",
+        "period": "2025 - Present",
         "description": "Emergency medical care and inpatient ward at a sports institution."
+      },
+      {
+        "role": "Emergency Physician",
+        "company": "Ministry of Health - GCBA",
+        "period": "2020 - 2025",
+        "description": "Emergency medical care and inpatient ward at a public hospital in Buenos Aires."
       },
       {
         "role": "Occupational Physician",
         "company": "Cemla - Medical Center",
-        "period": "2022 - Present",
+        "period": "2024",
         "description": "Occupational evaluations, health monitoring and prevention policies."
       },
       {
         "role": "Freelance Developer",
         "company": "Health Tech Projects",
-        "period": "2021 - Present",
+        "period": "2018 - Present",
         "description": "Implementing SaaS systems, AI automation and process integration for medical institutions."
       },
       {
@@ -93,30 +150,37 @@
     "subtitle": "Tech projects that combine health and innovation",
     "viewDemo": "View Demo",
     "viewRepo": "View Code",
+    "viewMore": "View more projects on GitHub",
+    "own": "Own",
     "items": [
+      {
+        "title": "Web Portfolio - React",
+        "description": "This same modern portfolio developed with React, Tailwind CSS and Framer Motion. Hybrid design combining medicine and technology with dark mode, bilingual language and smooth animations.",
+        "tech": ["React", "Vite", "Tailwind", "Framer Motion", "Netlify"],
+        "demo": "https://silver-kleicha-3caa53.netlify.app/",
+        "repo": "https://github.com/Winderiano/Portafolio",
+        "featured": true
+      },
       {
         "title": "Contacts API - Flask",
         "description": "REST API with Flask and Jinja2 for contact management like an agenda. Full CRUD with dynamic templates.",
         "tech": ["Python", "Flask", "SQLAlchemy", "Jinja2"],
         "demo": "https://windercool.pythonanywhere.com/",
-        "repo": "https://github.com/Winderiano/api-contacto",
-        "image": "cap-api_flask_jinja2.png"
+        "repo": "https://github.com/Winderiano/api-contacto"
       },
       {
         "title": "Ecommerce Demo",
         "description": "Modern online store demo. Complete frontend with HTML, CSS and JavaScript.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "demo": "https://fluffy-crostata-65321a.netlify.app/",
-        "repo": "https://github.com/Winderiano/TecnoComputer",
-        "image": "cap-demo_Ecommerce_front.png"
+        "repo": "https://github.com/Winderiano/TecnoComputer"
       },
       {
         "title": "Cine App",
         "description": "Movies web platform with Flask API REST backend and modern frontend. Cinema data integration.",
         "tech": ["Python", "Flask", "REST API", "HTML", "CSS", "JS"],
         "demo": "https://windercineweb.netlify.app/",
-        "repo": "https://github.com/Winderiano",
-        "image": "cap-cinema.png"
+        "repo": "https://github.com/Winderiano"
       }
     ]
   },

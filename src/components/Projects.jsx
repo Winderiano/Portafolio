@@ -1,11 +1,18 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaGithub, FaEye } from 'react-icons/fa';
+import { FaGithub, FaEye, FaStar } from 'react-icons/fa';
 
 export default function Projects() {
   const { t } = useLanguage();
 
   const projects = t('projects.items');
+  
+  // Ordenar proyectos - el destacado primero
+  const sortedProjects = [...projects].sort((a, b) => {
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    return 0;
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -18,6 +25,15 @@ export default function Projects() {
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
+  };
+
+  // Iconos por tipo de proyecto
+  const getProjectIcon = (title) => {
+    if (title.includes('Portfolio')) return '🌐';
+    if (title.includes('API')) return '🔗';
+    if (title.includes('Ecommerce')) return '🛒';
+    if (title.includes('Cine')) return '🎬';
+    return '💻';
   };
 
   return (
@@ -41,24 +57,47 @@ export default function Projects() {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {sortedProjects.map((project, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className="bg-white dark:bg-dark rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
+                className={`bg-white dark:bg-dark rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all relative ${
+                  project.featured ? 'ring-2 ring-primary' : ''
+                }`}
               >
-                {/* Image */}
-                <div className="h-48 bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-20">
-                    💻
+                {/* Featured Badge */}
+                {project.featured && (
+                  <div className="absolute top-0 right-0 z-10">
+                    <div className="bg-primary text-white px-3 py-1 rounded-bl-lg text-xs font-bold flex items-center gap-1">
+                      <FaStar size={10} />
+                      FEATURED
+                    </div>
                   </div>
+                )}
+
+                {/* Image */}
+                <div className={`h-48 relative overflow-hidden ${
+                  project.featured 
+                    ? 'bg-gradient-to-br from-primary/20 via-blue-500/20 to-accent/20 dark:from-primary/30 dark:via-blue-500/30 dark:to-accent/30' 
+                    : 'bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800'
+                }`}>
+                  <div className="absolute inset-0 flex items-center justify-center text-7xl">
+                    {getProjectIcon(project.title)}
+                  </div>
+                  {/* Overlay pattern */}
+                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2 flex items-center gap-2">
                     {project.title}
+                    {project.featured && (
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                        {t('projects.own')}
+                      </span>
+                    )}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
                     {project.description}
@@ -69,7 +108,7 @@ export default function Projects() {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-primary"
+                        className="px-2 py-1 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
                       >
                         {tech}
                       </span>
@@ -111,7 +150,7 @@ export default function Projects() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-dark text-slate-700 dark:text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
             >
               <FaGithub size={20} />
-              Ver más proyectos en GitHub
+              {t('projects.viewMore')}
             </a>
           </motion.div>
         </motion.div>
