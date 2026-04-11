@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowDown, FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -96,6 +96,17 @@ export default function Hero() {
                 className="px-8 py-3 bg-white dark:bg-dark-light text-slate-700 dark:text-white rounded-full font-semibold border-2 border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary transition-colors"
               >
                 {t('hero.contact')}
+              </motion.a>
+
+              <motion.a
+                href="https://raw.githubusercontent.com/Winderiano/Portafolio-React/main/assets/CV-Winder-Delgado.pdf"
+                download="CV-Winder-Delgado.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-accent text-white rounded-full font-semibold hover:bg-accent-dark transition-colors shadow-lg shadow-accent/30 flex items-center gap-2"
+              >
+                <FaDownload size={16} />
+                {t('hero.downloadCV')}
               </motion.a>
             </motion.div>
 

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Documentos locales (PDFs pesados - NO subir al repo)
+assets/Documents/
+public/assets/Documents/
