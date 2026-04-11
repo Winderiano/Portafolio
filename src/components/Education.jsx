@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaGraduationCap, FaAward } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Education() {
   const { t } = useLanguage();
 
   const education = t('education.items');
   const certificates = t('certificates.items');
+  const techLinks = t('techLinks.items');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -71,27 +72,70 @@ export default function Education() {
             ))}
           </div>
 
-          {/* Certifications */}
-          <motion.div variants={itemVariants}>
+          {/* Certifications con links */}
+          <motion.div variants={itemVariants} className="mb-16">
             <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
               <FaAward className="text-primary" />
               {t('certificates.title')}
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {certificates.map((cert, index) => (
-                <motion.div
+                <a
                   key={index}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02 }}
-                  className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-slate-50 to-slate-100 dark:from-dark-light dark:to-dark border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer"
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <FaAward className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {cert}
-                  </span>
-                </motion.div>
+                  <motion.div
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.02 }}
+                    className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-slate-50 to-slate-100 dark:from-dark-light dark:to-dark border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <FaAward className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm font-medium text-slate-700 dark:text-slate-300 block truncate">
+                        {cert.name}
+                      </span>
+                      <span className="text-xs text-slate-500 dark:text-slate-400">
+                        {cert.institution}
+                      </span>
+                    </div>
+                    <FaExternalLinkAlt className="w-4 h-4 text-slate-400" />
+                  </motion.div>
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Tech Links - Recursos y Documentación */}
+          <motion.div variants={itemVariants}>
+            <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+              <FaExternalLinkAlt className="text-primary" />
+              {t('techLinks.title')}
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {techLinks.map((tech, index) => (
+                <a
+                  key={index}
+                  href={tech.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <motion.div
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="p-4 rounded-xl bg-slate-50 dark:bg-dark-light border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors cursor-pointer"
+                  >
+                    <h4 className="font-bold text-slate-800 dark:text-white mb-1">
+                      {tech.name}
+                    </h4>
+                    <p className="text-xs text-primary hover:underline">
+                      Ver documentación →
+                    </p>
+                  </motion.div>
+                </a>
               ))}
             </div>
           </motion.div>

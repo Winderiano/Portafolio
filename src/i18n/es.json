@@ -11,8 +11,8 @@
     "greeting": "¡Hola! Soy",
     "name": "Winder Delgado",
     "title": "Médico & Desarrollador",
-    "subtitle": "Donde la medicina encontra la tecnología",
-    "description": "Médico con más de 10 años de experiencia clínica, especializado en ortopedia y traumatología, con pasión por la programación y la innovación tecnológica. Combino mi conocimiento médico con habilidades en desarrollo backend, automatización con IA y soluciones SaaS para transformar la atención médica.",
+    "subtitle": "Donde la medicina se encuentra con la tecnología",
+    "description": "Médico con más de 10 años de experiencia clínica con formación en ortopedia y traumatología, apasionado por la programación y la innovación tecnológica. Combino mi conocimiento médico con habilidades en desarrollo backend, automatización con IA y soluciones SaaS para transformar la atención médica.",
     "cta": "Ver Portafolio",
     "contact": "Contacto"
   },
@@ -26,11 +26,11 @@
     },
     "highlight2": {
       "title": "Desarrollador & Innovador Tech",
-      "description": " Freelance implementando sistemas SaaS, automatizaciones con IA e integración de procesos digitales en el sector salud."
+      "description": "Freelance implementando sistemas SaaS, automatizaciones con IA e integración de procesos digitales en el sector salud."
     },
     "highlight3": {
       "title": "Formación Continua",
-      "description": "Especialización en ortopedia, bioinformática, salud ocupacional y actualmente cursando medicina del trabajo."
+      "description": "Cursos en bioinformática, salud ocupacional, y actualmente cursando medicina del trabajo. Formación complementaria en ortopedia y traumatología."
     },
     "philosophy": "Creo firmemente que el futuro de la medicina está en la fusión de la experiencia clínica con la tecnología. Mi objetivo es aportar desde ambos mundos para crear soluciones que beneficien tanto a profesionales de la salud como a pacientes."
   },
@@ -38,7 +38,7 @@
     "title": "Habilidades",
     "medical": {
       "title": "Medicina",
-      "items": ["Medicina de Guardia", "Ortopedia y Traumatología", "Salud Ocupacional", "Investigación Clínica", "Ensayos Clínicos", "Medicina Laboral"]
+      "items": ["Medicina de Guardia", "Atención Primaria", "Salud Ocupacional", "Investigación Clínica", "Ensayos Clínicos", "Medicina Laboral"]
     },
     "tech": {
       "title": "Desarrollo & Tech",
@@ -58,9 +58,9 @@
     "items": [
       {
         "role": "Médico de Guardia",
-        "company": "Ministerio de Salud - GCBA",
+        "company": "Ministerio del Deporte - GCBA",
         "period": "2023 - Actual",
-        "description": "Atención médica de urgencias y sala de internación en hospital público de Buenos Aires."
+        "description": "Atención médica de urgencias y sala de internación en institución deportiva."
       },
       {
         "role": "Médico Laboral",
@@ -75,10 +75,10 @@
         "description": "Implementación de sistemas SaaS, automatizaciones con IA e integración de procesos para instituciones médicas."
       },
       {
-        "role": "Residente Ortopedia",
+        "role": "2do Año Aprobado - Ortopedia",
         "company": "Hospital José María Vargas - Caracas",
         "period": "2015 - 2018",
-        "description": "Residencia de especialización en ortopedia y traumatología. Cirugía ortopédica, травматология y rehabilitación."
+        "description": "Formación en ortopedia y traumatología. Rotación en cirugía ortopédica, urgencias traumatológicas y rehabilitación."
       },
       {
         "role": "Médico Rural",
@@ -126,14 +126,20 @@
       {
         "degree": "Postgrado Medicina del Trabajo",
         "institution": "Universidad Favaloro",
-        "period": "2024 - En curso",
+        "period": "2026 - En curso",
         "description": "Especialización en salud ocupacional y medicina laboral."
       },
       {
         "degree": "Master en Bioinformática",
         "institution": "Universidad Nebrija - España",
-        "period": "2023 - En curso",
-        "description": "Programa online de bioinformática y aplicaciones computationales en medicina."
+        "period": "2023 - 2024",
+        "description": "Programa online de bioinformática y aplicaciones computacionales en medicina. CULMINADO"
+      },
+      {
+        "degree": "Curso Superior Ortopedia y Traumatología",
+        "institution": "Ocean Medicina",
+        "period": "2024",
+        "description": "Curso superior de actualización en ortopedia y traumatología."
       },
       {
         "degree": "Full Stack Python",
@@ -142,15 +148,33 @@
         "description": "Programación full stack con Python, Django, Flask y tecnologías web."
       },
       {
-        "degree": "Ciencia de Datos e IA",
-        "institution": "Argentina Programa - USAM",
-        "period": "Feb 2023 - Oct 2023",
+        "degree": "Backend Python",
+        "institution": "Talento Tech",
+        "period": "2024",
+        "description": "Desarrollo backend con Python y frameworks modernos."
+      },
+      {
+        "degree": "Business Intelligence & Analytics",
+        "institution": "Talento Tech",
+        "period": "2024",
+        "description": "Análisis de datos y herramientas de business intelligence."
+      },
+      {
+        "degree": "Ciencia de Datos",
+        "institution": "Talento Tech",
+        "period": "2025 - En curso",
         "description": "Data science, machine learning y deep learning con Python."
+      },
+      {
+        "degree": "Análisis de Datos",
+        "institution": "Talento Tech",
+        "period": "2025 - En curso",
+        "description": "Análisis de datos y visualización."
       },
       {
         "degree": "Diplomatura Salud Ocupacional",
         "institution": "CEUJA - Venezuela",
-        "period": "2018 - 2019",
+        "period": "2014",
         "description": "Especialización en medicina ocupacional y seguridad laboral."
       },
       {
@@ -171,18 +195,97 @@
     "title": "Certificaciones",
     "view": "Ver Certificado",
     "items": [
-      "Certificación Full Stack Python - Codo a Codo",
-      "Certificación Data Science - Talento Tech",
-      "Certificación Python Inicial - Argentina Programa",
-      "Certificación Bioinformática - Euroinnova",
-      "Certificación BI & Analytics - Talento Tech",
-      "Certificación Automatización - Talento Tech"
+      {
+        "name": "Full Stack Python",
+        "institution": "Codo a Codo",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/CV%20Winder%20Delgado.pdf"
+      },
+      {
+        "name": "Ciencia de Datos e IA",
+        "institution": "Argentina Programa - USAM",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/unsam_-_ciencia_de_datos_e_inteligencia_artificial.pdf"
+      },
+      {
+        "name": "Master Bioinformática",
+        "institution": "Universidad Nebrija / Euroinnova",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/Master-Bioinformatica.pdf"
+      },
+      {
+        "name": "Python Inicial",
+        "institution": "Argentina Programa",
+        "link": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+      },
+      {
+        "name": "Backend Python",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "BI & Analytics",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "Ciencia de Datos",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "Análisis de Datos",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      }
+    ]
+  },
+  "techLinks": {
+    "title": "Recursos y Documentación",
+    "items": [
+      {
+        "name": "Python",
+        "url": "https://www.python.org/",
+        "doc": "https://docs.python.org/3/"
+      },
+      {
+        "name": "Django",
+        "url": "https://www.djangoproject.com/",
+        "doc": "https://docs.djangoproject.com/"
+      },
+      {
+        "name": "Flask",
+        "url": "https://flask.palletsprojects.com/",
+        "doc": "https://flask.palletsprojects.com/en/latest/"
+      },
+      {
+        "name": "FastAPI",
+        "url": "https://fastapi.tiangolo.com/",
+        "doc": "https://fastapi.tiangolo.com/"
+      },
+      {
+        "name": "MySQL",
+        "url": "https://www.mysql.com/",
+        "doc": "https://dev.mysql.com/doc/"
+      },
+      {
+        "name": "PostgreSQL",
+        "url": "https://www.postgresql.org/",
+        "doc": "https://www.postgresql.org/docs/"
+      },
+      {
+        "name": "HTML/CSS/JS",
+        "url": "https://developer.mozilla.org/",
+        "doc": "https://developer.mozilla.org/es/docs/Web"
+      },
+      {
+        "name": "Git/GitHub",
+        "url": "https://github.com/",
+        "doc": "https://docs.github.com/"
+      }
     ]
   },
   "contact": {
     "title": "Contacto",
     "subtitle": "¿Conectamos? Estoy abierto a nuevas oportunidades",
-    "description": "Ya seas una institución médica buscando digitalizar procesos, una startup de HealthTech buscando talento técnico con conocimiento clínico, o una empresa de tecnología necesito un perfil que entienda el sector salud, estaré encantado de conversar.",
+    "description": "Ya seas una institución médica buscando digitalizar procesos, una startup de HealthTech buscando talento técnico con conocimiento clínico, o una empresa de tecnología que necesita un perfil que entienda el sector salud, estaré encantado de conversar.",
     "form": {
       "name": "Nombre",
       "email": "Email",
@@ -190,8 +293,9 @@
       "message": "Mensaje",
       "submit": "Enviar Mensaje",
       "sending": "Enviando...",
-      "success": "¡Mensaje enviado con éxito!",
-      "error": "Error al enviar. Intenta de nuevo."
+      "success": "¡Mensaje enviado con éxito! Te contactaré pronto.",
+      "error": "Error al enviar. Intenta de nuevo o contáctame directamente.",
+      "note": "Los mensajes se envían directamente a mi email"
     },
     "direct": {
       "title": "Contacto Directo",
@@ -210,6 +314,6 @@
     "text": "Construido con",
     "heart": "pasión",
     "by": "por",
-    "copyright": "© 2024 Winder Delgado. Todos los derechos reservados."
+    "copyright": "© 2026 Winder Delgado. Todos los derechos reservados."
   }
 }

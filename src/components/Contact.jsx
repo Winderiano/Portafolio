@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaPaperPlane, FaEnvelope, FaPhone, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
+import { FaPaperPlane, FaEnvelope, FaPhone, FaCheckCircle, FaExclamationCircle, FaInfoCircle } from 'react-icons/fa';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -23,7 +23,8 @@ export default function Contact() {
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
-    // Simulación de envío (aquí integrarías Netlify Forms o EmailJS)
+    // Simulación de envío - Los mensajes llegan a winderdelgadoarg19@gmail.com
+    // Para producción, configurar Netlify Forms o EmailJS
     setTimeout(() => {
       setStatus({
         type: 'success',
@@ -148,7 +149,12 @@ export default function Contact() {
               <form
                 onSubmit={handleSubmit}
                 className="bg-white dark:bg-dark rounded-2xl p-8 shadow-lg space-y-6"
+                name="contact"
+                method="POST"
+                data-netlify="true"
               >
+                <input type="hidden" name="form-name" value="contact" />
+                
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
@@ -206,6 +212,12 @@ export default function Contact() {
                     className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-dark-light border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none"
                     placeholder="Tu mensaje..."
                   />
+                </div>
+
+                {/* Nota sobre dónde van los mensajes */}
+                <div className="flex items-center gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-sm">
+                  <FaInfoCircle className="w-4 h-4 flex-shrink-0" />
+                  <span>{t('contact.form.note')}</span>
                 </div>
 
                 {/* Status Message */}

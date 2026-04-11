@@ -12,7 +12,7 @@
     "name": "Winder Delgado",
     "title": "Doctor & Developer",
     "subtitle": "Where medicine meets technology",
-    "description": "Physician with over 10 years of clinical experience, specialized in orthopedics and traumatology, with a passion for programming and technological innovation. I combine medical knowledge with backend development skills, AI automation and SaaS solutions to transform healthcare.",
+    "description": "Physician with over 10 years of clinical experience with training in orthopedics and traumatology, passionate about programming and technological innovation. I combine medical knowledge with backend development skills, AI automation and SaaS solutions to transform healthcare.",
     "cta": "View Portfolio",
     "contact": "Contact"
   },
@@ -30,7 +30,7 @@
     },
     "highlight3": {
       "title": "Continuing Education",
-      "description": "Specialization in orthopedics, bioinformatics, occupational health, currently pursuing occupational medicine."
+      "description": "Courses in bioinformatics, occupational health, currently studying occupational medicine. Complementary training in orthopedics and traumatology."
     },
     "philosophy": "I firmly believe that the future of medicine lies in the fusion of clinical experience with technology. My goal is to contribute from both worlds to create solutions that benefit healthcare professionals and patients alike."
   },
@@ -38,7 +38,7 @@
     "title": "Skills",
     "medical": {
       "title": "Medicine",
-      "items": ["Emergency Medicine", "Orthopedics & Traumatology", "Occupational Health", "Clinical Research", "Clinical Trials", "Occupational Medicine"]
+      "items": ["Emergency Medicine", "Primary Care", "Occupational Health", "Clinical Research", "Clinical Trials", "Occupational Medicine"]
     },
     "tech": {
       "title": "Development & Tech",
@@ -58,9 +58,9 @@
     "items": [
       {
         "role": "Emergency Physician",
-        "company": "Ministry of Health - GCBA",
+        "company": "Ministry of Sports - GCBA",
         "period": "2023 - Present",
-        "description": "Emergency medical care and inpatient ward at a public hospital in Buenos Aires."
+        "description": "Emergency medical care and inpatient ward at a sports institution."
       },
       {
         "role": "Occupational Physician",
@@ -75,10 +75,10 @@
         "description": "Implementing SaaS systems, AI automation and process integration for medical institutions."
       },
       {
-        "role": "Orthopedics Resident",
+        "role": "2nd Year Completed - Orthopedics",
         "company": "Hospital José María Vargas - Caracas",
         "period": "2015 - 2018",
-        "description": "Residency in orthopedics and traumatology. Orthopedic surgery, traumatology and rehabilitation."
+        "description": "Training in orthopedics and traumatology. Rotation in orthopedic surgery, emergency traumatology and rehabilitation."
       },
       {
         "role": "Rural Physician",
@@ -126,14 +126,20 @@
       {
         "degree": "Postgraduate Occupational Medicine",
         "institution": "Universidad Favaloro",
-        "period": "2024 - In Progress",
+        "period": "2026 - In Progress",
         "description": "Specialization in occupational health and occupational medicine."
       },
       {
         "degree": "Master in Bioinformatics",
         "institution": "Universidad Nebrija - Spain",
-        "period": "2023 - In Progress",
-        "description": "Online bioinformatics program and computational applications in medicine."
+        "period": "2023 - 2024",
+        "description": "Online bioinformatics program and computational applications in medicine. COMPLETED"
+      },
+      {
+        "degree": "Upper Course Orthopedics & Traumatology",
+        "institution": "Ocean Medicina",
+        "period": "2024",
+        "description": "Upper level course in orthopedics and traumatology update."
       },
       {
         "degree": "Full Stack Python",
@@ -142,15 +148,33 @@
         "description": "Full stack programming with Python, Django, Flask and web technologies."
       },
       {
-        "degree": "Data Science & AI",
-        "institution": "Argentina Programa - USAM",
-        "period": "Feb 2023 - Oct 2023",
+        "degree": "Backend Python",
+        "institution": "Talento Tech",
+        "period": "2024",
+        "description": "Backend development with Python and modern frameworks."
+      },
+      {
+        "degree": "Business Intelligence & Analytics",
+        "institution": "Talento Tech",
+        "period": "2024",
+        "description": "Data analysis and business intelligence tools."
+      },
+      {
+        "degree": "Data Science",
+        "institution": "Talento Tech",
+        "period": "2025 - In Progress",
         "description": "Data science, machine learning and deep learning with Python."
+      },
+      {
+        "degree": "Data Analysis",
+        "institution": "Talento Tech",
+        "period": "2025 - In Progress",
+        "description": "Data analysis and visualization."
       },
       {
         "degree": "Occupational Health Diploma",
         "institution": "CEUJA - Venezuela",
-        "period": "2018 - 2019",
+        "period": "2014",
         "description": "Specialization in occupational medicine and workplace safety."
       },
       {
@@ -171,12 +195,91 @@
     "title": "Certifications",
     "view": "View Certificate",
     "items": [
-      "Full Stack Python Certification - Codo a Codo",
-      "Data Science Certification - Talento Tech",
-      "Python Initial Certification - Argentina Programa",
-      "Bioinformatics Certification - Euroinnova",
-      "BI & Analytics Certification - Talento Tech",
-      "Automation Certification - Talento Tech"
+      {
+        "name": "Full Stack Python",
+        "institution": "Codo a Codo",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/CV%20Winder%20Delgado.pdf"
+      },
+      {
+        "name": "Data Science & AI",
+        "institution": "Argentina Programa - USAM",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/unsam_-_ciencia_de_datos_e_inteligencia_artificial.pdf"
+      },
+      {
+        "name": "Master Bioinformatics",
+        "institution": "Universidad Nebrija / Euroinnova",
+        "link": "https://github.com/Winderiano/Portafolio/blob/main/assets/Documents/Master-Bioinformatica.pdf"
+      },
+      {
+        "name": "Python Initial",
+        "institution": "Argentina Programa",
+        "link": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+      },
+      {
+        "name": "Backend Python",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "BI & Analytics",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "Data Science",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      },
+      {
+        "name": "Data Analysis",
+        "institution": "Talento Tech",
+        "link": "https://talentotech.gob.ar/"
+      }
+    ]
+  },
+  "techLinks": {
+    "title": "Resources & Documentation",
+    "items": [
+      {
+        "name": "Python",
+        "url": "https://www.python.org/",
+        "doc": "https://docs.python.org/3/"
+      },
+      {
+        "name": "Django",
+        "url": "https://www.djangoproject.com/",
+        "doc": "https://docs.djangoproject.com/"
+      },
+      {
+        "name": "Flask",
+        "url": "https://flask.palletsprojects.com/",
+        "doc": "https://flask.palletsprojects.com/en/latest/"
+      },
+      {
+        "name": "FastAPI",
+        "url": "https://fastapi.tiangolo.com/",
+        "doc": "https://fastapi.tiangolo.com/"
+      },
+      {
+        "name": "MySQL",
+        "url": "https://www.mysql.com/",
+        "doc": "https://dev.mysql.com/doc/"
+      },
+      {
+        "name": "PostgreSQL",
+        "url": "https://www.postgresql.org/",
+        "doc": "https://www.postgresql.org/docs/"
+      },
+      {
+        "name": "HTML/CSS/JS",
+        "url": "https://developer.mozilla.org/",
+        "doc": "https://developer.mozilla.org/es/docs/Web"
+      },
+      {
+        "name": "Git/GitHub",
+        "url": "https://github.com/",
+        "doc": "https://docs.github.com/"
+      }
     ]
   },
   "contact": {
@@ -190,8 +293,9 @@
       "message": "Message",
       "submit": "Send Message",
       "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending. Try again."
+      "success": "Message sent successfully! I'll contact you soon.",
+      "error": "Error sending. Try again or contact me directly.",
+      "note": "Messages are sent directly to my email"
     },
     "direct": {
       "title": "Direct Contact",
@@ -210,6 +314,6 @@
     "text": "Built with",
     "heart": "passion",
     "by": "by",
-    "copyright": "© 2024 Winder Delgado. All rights reserved."
+    "copyright": "© 2026 Winder Delgado. All rights reserved."
   }
 }
