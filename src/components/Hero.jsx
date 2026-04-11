@@ -99,7 +99,7 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href="https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/CV%20Winder%20Delgado.pdf"
+                href="https://raw.githubusercontent.com/Winderiano/Portafolio/main/assets/Documents/CVWrdp.pdf"
                 download="CV-Winder-Delgado.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
