@@ -23,16 +23,32 @@ export default function Contact() {
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
-    // Simulación de envío - Los mensajes llegan a winderdelgadoarg19@gmail.com
-    // Para producción, configurar Netlify Forms o EmailJS
-    setTimeout(() => {
-      setStatus({
-        type: 'success',
-        message: t('contact.form.success'),
+    try {
+      const response = await fetch('https://app.formwit.com/api/s/019d7e4c-bb6f-7000-bebd-06ebc3378502', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      if (response.ok) {
+        setStatus({
+          type: 'success',
+          message: t('contact.form.success'),
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('Error en el envío');
+      }
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: t('contact.form.error'),
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   const containerVariants = {
