@@ -73,7 +73,7 @@ export default function Education() {
           </div>
 
           {/* Certifications con links */}
-          <motion.div variants={itemVariants} className="mb-16">
+          <motion.div id="certificates" variants={itemVariants} className="mb-16">
             <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
               <FaAward className="text-primary" />
               {t('certificates.title')}

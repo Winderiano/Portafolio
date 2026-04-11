@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart, FaStethoscope, FaCode } from 'react-icons/fa';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -17,13 +17,14 @@ export default function Footer() {
           className="flex flex-col sm:flex-row items-center justify-center gap-2 text-slate-600 dark:text-slate-400"
         >
           <span>{t('footer.text')}</span>
-          <motion.span
+          <motion.div
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="text-red-500"
+            className="flex items-center gap-1 text-primary"
           >
-            <FaHeart size={16} />
-          </motion.span>
+            <FaStethoscope size={16} />
+            <FaCode size={14} />
+          </motion.div>
           <span className="font-medium text-primary">{t('footer.heart')}</span>
           <span>{t('footer.by')}</span>
           <span className="font-bold text-slate-800 dark:text-white">Winder Delgado</span>

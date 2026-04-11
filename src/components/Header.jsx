@@ -21,9 +21,11 @@ export default function Header() {
   const navItems = [
     { key: 'home', href: '#home' },
     { key: 'about', href: '#about' },
+    { key: 'education', href: '#education' },
     { key: 'skills', href: '#skills' },
     { key: 'experience', href: '#experience' },
     { key: 'projects', href: '#projects' },
+    { key: 'certificates', href: '#certificates' },
     { key: 'contact', href: '#contact' },
   ];
 

@@ -2,9 +2,11 @@
   "nav": {
     "home": "Inicio",
     "about": "Sobre mí",
+    "education": "Formación",
     "skills": "Habilidades",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "certificates": "Certificaciones",
     "contact": "Contacto"
   },
   "hero": {
