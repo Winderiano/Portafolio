@@ -63,7 +63,7 @@
         { "name": "Python", "level": "advanced", "logo": "python" },
         { "name": "Django", "level": "advanced", "logo": "django" },
         { "name": "Flask", "level": "advanced", "logo": "flask" },
-        { "name": "FastAPI", "level": "intermediate", "logo": "fastapi" },
+        { "name": "FastAPI", "level": "advanced", "logo": "fastapi" },
         { "name": "SQL", "level": "advanced" },
         { "name": "MySQL", "level": "advanced", "logo": "mysql" },
         { "name": "PostgreSQL", "level": "advanced", "logo": "postgresql" }
@@ -92,9 +92,35 @@
       "items": [
         { "name": "Git/GitHub", "level": "advanced", "logo": "github" },
         { "name": "Docker", "level": "intermediate", "logo": "docker" },
-        { "name": "n8n", "level": "intermediate", "logo": "n8n" },
         { "name": "Web Scraping", "level": "intermediate" },
         { "name": "Unit Testing", "level": "beginner" }
+      ]
+    },
+    "aiAgents": {
+      "title": "AI Agents & Automation",
+      "items": [
+        { "name": "OpenCode (CLI)", "level": "advanced" },
+        { "name": "n8n", "level": "intermediate", "logo": "n8n" },
+        { "name": "OpenClaw", "level": "beginner" },
+        { "name": "MCPs & Plugins", "level": "intermediate" },
+        { "name": "Workflows & Automation", "level": "intermediate" }
+      ]
+    },
+    "management": {
+      "title": "Management & Productivity",
+      "items": [
+        { "name": "ClickUp", "level": "intermediate" },
+        { "name": "Notion", "level": "intermediate" },
+        { "name": "Obsidian", "level": "intermediate" }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructure & Cloud",
+      "items": [
+        { "name": "Deploy (VPS)", "level": "beginner" },
+        { "name": "Cloud Databases", "level": "intermediate" },
+        { "name": "Cloud Storage", "level": "intermediate" },
+        { "name": "VPN / Security", "level": "beginner" }
       ]
     },
     "soft": {

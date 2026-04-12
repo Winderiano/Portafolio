@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaStethoscope, FaCode, FaBrain, FaTools, FaUsers, FaCheckCircle } from 'react-icons/fa';
+import { FaStethoscope, FaCode, FaBrain, FaTools, FaUsers, FaCheckCircle, FaRobot, FaProjectDiagram, FaCloud } from 'react-icons/fa';
 
 // Mapeo de logos usando react-icons/fa
 const getLogo = (logoName) => {
@@ -60,6 +60,24 @@ export default function Skills() {
       icon: FaBrain,
       gradient: 'from-violet-500 to-purple-600',
       bgGradient: 'from-violet-50 to-purple-100 dark:from-violet-900/20 dark:to-purple-900/20',
+    },
+    {
+      key: 'aiAgents',
+      icon: FaRobot,
+      gradient: 'from-indigo-500 to-blue-600',
+      bgGradient: 'from-indigo-50 to-blue-100 dark:from-indigo-900/20 dark:to-blue-900/20',
+    },
+    {
+      key: 'management',
+      icon: FaProjectDiagram,
+      gradient: 'from-pink-500 to-rose-600',
+      bgGradient: 'from-pink-50 to-rose-100 dark:from-pink-900/20 dark:to-rose-900/20',
+    },
+    {
+      key: 'infrastructure',
+      icon: FaCloud,
+      gradient: 'from-slate-500 to-gray-600',
+      bgGradient: 'from-slate-50 to-gray-100 dark:from-slate-900/20 dark:to-gray-900/20',
     },
     {
       key: 'tools',
