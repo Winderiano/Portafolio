@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import { FaPaperPlane, FaEnvelope, FaPhone, FaCheckCircle, FaExclamationCircle, FaInfoCircle } from 'react-icons/fa';
 
+const FORMWIT_ENDPOINT = import.meta.env.VITE_FORMWIT_ENDPOINT;
+
 export default function Contact() {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ export default function Contact() {
     email: '',
     subject: '',
     message: '',
+    company: '', // honeypot anti-spam, se filtra antes de enviar
   });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,16 +23,23 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Honeypot: si un bot completa este campo oculto, se descarta el envío silenciosamente
+    if (formData.company) {
+      return;
+    }
+
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
     try {
-      const response = await fetch('https://app.formwit.com/api/s/019d7e4c-bb6f-7000-bebd-06ebc3378502', {
+      const { company: _company, ...payload } = formData;
+      const response = await fetch(FORMWIT_ENDPOINT, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -37,7 +47,7 @@ export default function Contact() {
           type: 'success',
           message: t('contact.form.success'),
         });
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '', company: '' });
       } else {
         throw new Error('Error en el envío');
       }
@@ -165,12 +175,19 @@ export default function Contact() {
               <form
                 onSubmit={handleSubmit}
                 className="bg-white dark:bg-dark rounded-2xl p-8 shadow-lg space-y-6"
-                name="contact"
-                method="POST"
-                data-netlify="true"
               >
-                <input type="hidden" name="form-name" value="contact" />
-                
+                {/* Honeypot: oculto para humanos, los bots suelen completarlo */}
+                <input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                />
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">

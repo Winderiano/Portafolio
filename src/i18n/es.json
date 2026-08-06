@@ -1,4 +1,13 @@
 {
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "toggleToDark": "Cambiar a modo oscuro",
+    "toggleToLight": "Cambiar a modo claro",
+    "switchToSpanish": "Cambiar idioma a español",
+    "switchToEnglish": "Cambiar idioma a inglés"
+  },
   "nav": {
     "home": "Inicio",
     "about": "Sobre mí",
@@ -187,30 +196,34 @@
         "title": "Portafolio Web - React",
         "description": "Este mismo portafolio moderno desarrollado con React, Tailwind CSS y Framer Motion. Diseño híbrido que combina medicina y tecnología con modo oscuro, idioma bilingüe y animaciones suaves.",
         "tech": ["React", "Vite", "Tailwind", "Framer Motion", "Netlify"],
-        "demo": "https://silver-kleicha-3caa53.netlify.app/",
+        "demo": "https://winderiano.netlify.app/",
         "repo": "https://github.com/Winderiano/Portafolio",
-        "featured": true
+        "featured": true,
+        "icon": "🌐"
       },
       {
         "title": "API Contactos - Flask",
         "description": "API REST con Flask y Jinja2 para gestión de contactos tipo agenda. CRUD completo con templates dinámicos.",
         "tech": ["Python", "Flask", "SQLAlchemy", "Jinja2"],
         "demo": "https://windercool.pythonanywhere.com/",
-        "repo": "https://github.com/Winderiano/api-contacto"
+        "repo": "https://github.com/Winderiano/api-contacto",
+        "icon": "🔗"
       },
       {
         "title": "Ecommerce Demo",
         "description": "Demo de tienda online con diseño moderno. Frontend completo con HTML, CSS y JavaScript.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "demo": "https://fluffy-crostata-65321a.netlify.app/",
-        "repo": "https://github.com/Winderiano/TecnoComputer"
+        "repo": "https://github.com/Winderiano/TecnoComputer",
+        "icon": "🛒"
       },
       {
         "title": "Cine App",
         "description": "Plataforma web de películas con backend Flask API REST y frontend moderno. Integración de datos de cine.",
         "tech": ["Python", "Flask", "REST API", "HTML", "CSS", "JS"],
         "demo": "https://windercineweb.netlify.app/",
-        "repo": "https://github.com/Winderiano"
+        "repo": "https://github.com/Winderiano",
+        "icon": "🎬"
       }
     ]
   },

@@ -46,111 +46,127 @@ export default function Header() {
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/90 dark:bg-dark/90 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <motion.a
-            href="#home"
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold text-slate-800 dark:text-white"
-          >
-            WD
-          </motion.a>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            {navItems.map((item) => (
-              <motion.button
-                key={item.key}
-                onClick={() => scrollToSection(item.href)}
-                whileHover={{ y: -2 }}
-                className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
-              >
-                {t(`nav.${item.key}`)}
-              </motion.button>
-            ))}
-          </nav>
-
-          {/* Controls */}
-          <div className="flex items-center gap-2">
-            {/* Language Switcher */}
-            <div className="flex items-center bg-slate-100 dark:bg-dark-light rounded-lg p-1">
-              <button
-                onClick={() => changeLanguage('es')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-all ${
-                  isSpanish 
-                    ? 'bg-primary text-white' 
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-800'
-                }`}
-              >
-                ES
-              </button>
-              <button
-                onClick={() => changeLanguage('en')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-all ${
-                  !isSpanish 
-                    ? 'bg-primary text-white' 
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-800'
-                }`}
-              >
-                EN
-              </button>
-            </div>
-
-            {/* Theme Toggle */}
-            <motion.button
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-dark-light text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-white"
+      >
+        {t('a11y.skipToContent')}
+      </a>
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/90 dark:bg-dark/90 backdrop-blur-md shadow-lg'
+            : 'bg-transparent'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo */}
+            <motion.a
+              href="#home"
+              whileHover={{ scale: 1.05 }}
+              className="text-2xl font-bold text-slate-800 dark:text-white"
             >
-              {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}
-            </motion.button>
+              WD
+            </motion.a>
 
-            {/* Mobile Menu Button */}
-            <motion.button
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-dark-light text-slate-600 dark:text-slate-300"
-            >
-              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </motion.button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-dark border-t dark:border-slate-700"
-          >
-            <nav className="flex flex-col p-4 gap-2">
+            {/* Desktop Navigation */}
+            <nav aria-label="Principal" className="hidden md:flex items-center gap-6">
               {navItems.map((item) => (
                 <motion.button
                   key={item.key}
                   onClick={() => scrollToSection(item.href)}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-left px-4 py-3 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-dark-light transition-colors font-medium"
+                  whileHover={{ y: -2 }}
+                  className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
                 >
                   {t(`nav.${item.key}`)}
                 </motion.button>
               ))}
             </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+
+            {/* Controls */}
+            <div className="flex items-center gap-2">
+              {/* Language Switcher */}
+              <div className="flex items-center bg-slate-100 dark:bg-dark-light rounded-lg p-1">
+                <button
+                  onClick={() => changeLanguage('es')}
+                  aria-label={t('a11y.switchToSpanish')}
+                  aria-pressed={isSpanish}
+                  className={`px-2 py-1 rounded text-sm font-medium transition-all ${
+                    isSpanish
+                      ? 'bg-primary text-white'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-800'
+                  }`}
+                >
+                  ES
+                </button>
+                <button
+                  onClick={() => changeLanguage('en')}
+                  aria-label={t('a11y.switchToEnglish')}
+                  aria-pressed={!isSpanish}
+                  className={`px-2 py-1 rounded text-sm font-medium transition-all ${
+                    !isSpanish
+                      ? 'bg-primary text-white'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-800'
+                  }`}
+                >
+                  EN
+                </button>
+              </div>
+
+              {/* Theme Toggle */}
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={toggleTheme}
+                aria-label={isDark ? t('a11y.toggleToLight') : t('a11y.toggleToDark')}
+                aria-pressed={isDark}
+                className="p-2 rounded-lg bg-slate-100 dark:bg-dark-light text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              >
+                {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}
+              </motion.button>
+
+              {/* Mobile Menu Button */}
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? t('a11y.closeMenu') : t('a11y.openMenu')}
+                aria-expanded={isOpen}
+                className="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-dark-light text-slate-600 dark:text-slate-300"
+              >
+                {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+              </motion.button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden bg-white dark:bg-dark border-t dark:border-slate-700"
+            >
+              <nav aria-label="Principal móvil" className="flex flex-col p-4 gap-2">
+                {navItems.map((item) => (
+                  <motion.button
+                    key={item.key}
+                    onClick={() => scrollToSection(item.href)}
+                    whileTap={{ scale: 0.95 }}
+                    className="text-left px-4 py-3 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-dark-light transition-colors font-medium"
+                  >
+                    {t(`nav.${item.key}`)}
+                  </motion.button>
+                ))}
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.header>
+    </>
   );
 }

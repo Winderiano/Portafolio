@@ -4,7 +4,7 @@
 
 ## Tecnologías
 
-![React](https://img.shields.io/badge/React-18-blue)
+![React](https://img.shields.io/badge/React-19-blue)
 ![Vite](https://img.shields.io/badge/Vite-5-purple)
 ![Tailwind](https://img.shields.io/badge/Tailwind-3-teal)
 ![Framer Motion](https://img.shields.io/badge/Framer-Motion-black)
@@ -19,7 +19,7 @@
 
 ## Ver online
 
-[**Portafolio Online**](https://portafoliowinder.netlify.app)
+[**Portafolio Online**](https://winderiano.netlify.app)
 
 ---
 

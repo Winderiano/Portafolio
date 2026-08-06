@@ -24,7 +24,7 @@ function App() {
     <LanguageProvider>
       <div className="min-h-screen bg-light dark:bg-dark transition-colors">
         <Header />
-        <main>
+        <main id="main-content">
           <Hero />
           <About />
           <Skills />

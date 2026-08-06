@@ -1,4 +1,13 @@
 {
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "toggleToDark": "Switch to dark mode",
+    "toggleToLight": "Switch to light mode",
+    "switchToSpanish": "Switch language to Spanish",
+    "switchToEnglish": "Switch language to English"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -187,30 +196,34 @@
         "title": "Web Portfolio - React",
         "description": "This same modern portfolio developed with React, Tailwind CSS and Framer Motion. Hybrid design combining medicine and technology with dark mode, bilingual language and smooth animations.",
         "tech": ["React", "Vite", "Tailwind", "Framer Motion", "Netlify"],
-        "demo": "https://silver-kleicha-3caa53.netlify.app/",
+        "demo": "https://winderiano.netlify.app/",
         "repo": "https://github.com/Winderiano/Portafolio",
-        "featured": true
+        "featured": true,
+        "icon": "🌐"
       },
       {
         "title": "Contacts API - Flask",
         "description": "REST API with Flask and Jinja2 for contact management like an agenda. Full CRUD with dynamic templates.",
         "tech": ["Python", "Flask", "SQLAlchemy", "Jinja2"],
         "demo": "https://windercool.pythonanywhere.com/",
-        "repo": "https://github.com/Winderiano/api-contacto"
+        "repo": "https://github.com/Winderiano/api-contacto",
+        "icon": "🔗"
       },
       {
         "title": "Ecommerce Demo",
         "description": "Modern online store demo. Complete frontend with HTML, CSS and JavaScript.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "demo": "https://fluffy-crostata-65321a.netlify.app/",
-        "repo": "https://github.com/Winderiano/TecnoComputer"
+        "repo": "https://github.com/Winderiano/TecnoComputer",
+        "icon": "🛒"
       },
       {
         "title": "Cine App",
         "description": "Movies web platform with Flask API REST backend and modern frontend. Cinema data integration.",
         "tech": ["Python", "Flask", "REST API", "HTML", "CSS", "JS"],
         "demo": "https://windercineweb.netlify.app/",
-        "repo": "https://github.com/Winderiano"
+        "repo": "https://github.com/Winderiano",
+        "icon": "🎬"
       }
     ]
   },

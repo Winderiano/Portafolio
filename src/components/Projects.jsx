@@ -27,15 +27,6 @@ export default function Projects() {
     visible: { opacity: 1, y: 0 },
   };
 
-  // Iconos por tipo de proyecto
-  const getProjectIcon = (title) => {
-    if (title.includes('Portfolio')) return '🌐';
-    if (title.includes('API')) return '🔗';
-    if (title.includes('Ecommerce')) return '🛒';
-    if (title.includes('Cine')) return '🎬';
-    return '💻';
-  };
-
   return (
     <section id="projects" className="py-20 bg-slate-50 dark:bg-dark-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +74,7 @@ export default function Projects() {
                     : 'bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800'
                 }`}>
                   <div className="absolute inset-0 flex items-center justify-center text-7xl">
-                    {getProjectIcon(project.title)}
+                    {project.icon}
                   </div>
                   {/* Overlay pattern */}
                   <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
